@@ -1,0 +1,2 @@
+-- HAVING - departments whose average salary is above 50000.
+SELECT department, AVG(salary) AS avg_salary FROM employees GROUP BY department HAVING AVG(salary) > 50000;
